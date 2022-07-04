@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.adminPanelNavigation {
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 15%;
+    background-color: green;
+}
+
+.content {
+    margin-left: 15%;
+}
+
+/*Small smartphones*/
+@media only screen and (max-width: 512px){
+	
+    .content {
+        margin-left: 0%;
+    }
+
+    .adminPanelNavigation {
+        position: fixed;
+        left: -75%;
+    }
+}
+
+

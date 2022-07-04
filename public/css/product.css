@@ -1,0 +1,58 @@
+:root{
+    --maincolor : rgb(111,207,184)
+}
+.productInfoTop {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin: 20px 0 ;
+    height: calc(100vh - 110px);
+}
+
+.MainImage{
+    width: 100%;
+    height: 70vh;
+    object-fit: cover;
+}
+
+.productImageList  {
+    display: flex;
+    justify-content: space-between;
+}
+
+.productImageList  img {
+    height: 100px;
+    width: 100px;
+}
+
+.productDescription {
+    height: auto;
+}
+
+.productMainInformation {
+    padding: 20px;
+}
+
+.productBtns {
+    margin: 20px 0;
+}
+
+.productBtns button {
+    height: 40px;
+    padding: 10px;
+    font-size: 1.2rem;
+    line-height: 10px;
+    border: none;
+    width: 150px;
+}
+
+.productBtns button:nth-child(1) {
+    background-color: var(--maincolor);
+    color: white;
+}
+
+.productBtns button:nth-child(2) {
+    margin-left: 20px;
+    border: 1px solid var(--maincolor);
+}
+
+

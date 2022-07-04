@@ -1,0 +1,307 @@
+:root{
+    --maincolor : rgb(111,207,184)
+}
+
+.banner {
+    margin: 30px 0;
+    display: grid;
+    grid-template-columns: 75% 25%;
+    height: 550px;
+}
+
+.mainBanner{
+    display: grid;
+    align-items: center;
+    justify-content: left;
+    background-image: url("/images/mainbanner.jpeg");
+    background-size: cover;
+}
+
+.mainBanner div {
+    padding-top: 30px;
+    width: 320px;
+    margin-left: 50px;
+}
+
+.mainBanner p {
+    text-align: center;
+    color: var(--maincolor);
+    font-size: 24px;
+    font-weight: 700;
+    margin-top: 10px;
+    letter-spacing: .1em;
+    line-height: 1.2em;
+}
+
+.mainBanner a {
+    display: block;
+    padding: 10px 19px;
+    text-decoration: none;
+    background-color: var(--maincolor);
+    width: 100px;
+    text-align: center;
+    margin: 0px auto;
+    margin-top: 15px;
+    font-size: 18px;
+    font-weight: 700;
+    color: white;
+    
+}
+
+.mainBanner h2 {
+    font-size: 45px;
+    text-align: center;
+}
+
+.mainBanner button {
+    position: absolute;
+    top: 70%;
+    left: 25%;
+    background-color: var(--maincolor);
+    color: white;
+    padding: 20px;
+    font-size: 14px;
+}
+
+.asideBanner{
+   margin-left: 30px; 
+}
+
+.asideBannerTop {
+    height: 50%;
+    background-color: green;
+    background-image: url("/images/aside.jpg");
+    background-size: cover;
+    background-position: center right;
+    display: grid;
+    align-items: flex-end;
+    padding: 20px;
+}
+
+.asideBannerTop a {
+    display: block;
+    width: 100%;
+    background-color: white;
+    cursor: pointer;
+    text-decoration: none;
+    color: #333333;
+    padding: 10px;
+    box-sizing: border-box;
+    font-size: .9rem;
+    font-weight: 700;
+}
+
+.asideBannerTop a span{
+    color: var(--maincolor);
+    font-size: 1.2rem;
+}
+
+.asideBannerBottom {
+    margin-top: 30px;
+    height: calc(43% - 30px);
+    background-color: var(--maincolor);
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.asideBannerBottom a {
+    display: block;
+    text-decoration: none;
+    color: #333333;
+    color: white;
+    font-size: 2.4rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.asideBannerBottom .sixty {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+/*categories begin here*/
+
+
+.categories {
+    height: calc(100vh - 110px);
+    display: grid;
+    grid-template-columns: 75% 25%;
+}
+
+.categoriesHeader {
+    background-color: white;
+    padding: 20px;
+}
+
+.categoriesLeft{
+    display: grid;
+    grid-template-columns: 25% 75%;
+}
+
+.categoriesFourList {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100%;
+    grid-gap: 30px;
+}
+
+.categoriesFourList a , .categoriesRight a {
+    text-decoration: none;
+    color: #333333;
+    display: block;
+    position: relative;
+    background-size: cover;
+}
+
+.categoriesRight {
+    margin-left: 30px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 30px;
+    height: 100%;
+}
+
+.categoriesRight a {
+    height: 100%;
+}
+
+.categoriesFourList a  span , .categoriesRight a span {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+}
+
+.categoriesHeader {
+    margin-right: 30px;
+}
+
+.categoriesHeader ul {
+    list-style-type: none;
+    margin-top: 20px;
+} 
+
+.categoriesHeader ul li {
+    border-bottom: 1px solid #F2F3F7;
+}
+
+.categoriesHeader ul li a {
+    height: 40px;
+    color : #333333;
+    display: block;
+    text-decoration: none;
+    line-height: 40px;
+}
+
+/*popular products*/
+
+.popularProducts {
+    background-color: white;
+    margin: 30px 0;
+    padding: 20px 0;
+}
+
+.popularProducts ul {
+    list-style-type: none;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.popularProducts ul li {
+    display: inline;
+    text-align: center;
+    font-size: 1.2rem;
+    margin: 0 10px;
+}
+
+.products{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: 20px;
+    grid-gap: 20px;
+}
+
+
+.productCover a {
+    display: block;
+    text-decoration: none;
+    color: #333333;
+}
+
+.productCover img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.productName {
+    margin-top: 10px;
+    height: 40px;
+    overflow: hidden;
+    font-size: 1.2rem;
+}
+
+
+.productPrice {
+    font-weight: 700;
+    color: var(--maincolor);
+    font-size: 1.3rem;
+}
+.productButtons {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+.productButtons button {
+    width: 45%;
+    padding: 3px;
+    border: none;
+}
+
+.popularProducts button:nth-child(1) {
+    background-color: var(--maincolor);
+    color: white;
+}
+
+/*footer*/
+
+.footer {
+    background-color: #F2F3F7;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 30px;
+    margin-bottom: 30px;
+    color: #333333;
+}
+
+.footer div {
+    background-color: white;
+    height: 250px;
+    padding: 20px;
+}
+
+.footerAboutUs h3 , .footerCategories h3, .footerQuickLinks h3{
+    color: #bdbdbd;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.footerCategories ul , .footerQuickLinks ul {
+    list-style-type: none;
+}
+
+.footerCategories ul li a, .footerQuickLinks ul li a {
+    display: block;
+    text-decoration: none;
+    color: #333333;
+    margin: 10px 0;
+}
+
+/*end of foooter*/
+
+.copyright {
+    padding-bottom: 20px;
+}

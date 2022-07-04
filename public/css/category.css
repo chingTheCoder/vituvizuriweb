@@ -1,0 +1,99 @@
+:root{
+    --maincolor : rgb(111,207,184)
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+
+/*categories menu*/
+
+.categoriesMenu {
+    height: calc( 100vh - 110px);
+    background-color: white;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+
+.categoriesHeader {
+    margin-right: 30px;
+    color: #bdbdbd;
+}
+
+.categoriesMenu ul {
+    list-style-type: none;
+    margin-top: 20px;
+} 
+
+.categoriesMenu ul li {
+    border-bottom: 1px solid #F2F3F7;
+}
+
+.categoriesMenu ul li a {
+    height: 40px;
+    color : #333333;
+    display: block;
+    text-decoration: none;
+    line-height: 40px;
+}
+
+/*end of categories*/
+
+.productList {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 20px 0 20px 20px;
+    grid-gap: 20px;
+}
+
+.productCover {
+    background-color: white;
+}
+
+.productCover a {
+    display: block;
+    text-decoration: none;
+    color: #333333;
+}
+
+.productCover img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.productName {
+    margin-top: 10px;
+    height: 40px;
+    overflow: hidden;
+    font-size: 1.2rem;
+}
+
+.productInfo {
+    padding: 0 20px;
+}
+
+
+.productPrice {
+    font-weight: 700;
+    color: var(--maincolor);
+    font-size: 1.3rem;
+}
+.productButtons {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+.productButtons button {
+    width: 45%;
+    padding: 3px;
+    border: none;
+}
+
+.productButtons button:nth-child(1) {
+    background-color: var(--maincolor);
+    color: white;
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create product</title>
+     <link rel="stylesheet" href="/css/admin/admin.css">
+     <link rel="stylesheet" href="/css/admin/createproduct.css">
+</head>
+<body>
+     <div class="container">
+        {{>adminPanelNavigation}}
+        <div class="content">
+            <div class="productName">
+                <input type="text" placeholder="Product Name" name="productName">
+            </div>
+            <div class="imagesPage">
+                <div>
+                    <input type="file" name="filename" class="imageInput">
+                    <div class="imageUploadCover">
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="quantity">
+                <input type="number" placeholder="enter quantity">
+            </div>
+            <div class="productDescription">
+                <h2>Product Description</h2>
+                <div class="productDescriptionCover">
+                    <textarea placeholder="write markup here">
+                        
+                    </textarea>
+                    <div class="html">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="nextScroll">
+            scroll next
+        </div>
+    </div>
+    <script src="/js/admin/createproduct.js"></script>
+</body>
+</html>
