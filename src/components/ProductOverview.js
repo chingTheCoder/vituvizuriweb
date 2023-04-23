@@ -1,5 +1,6 @@
 import React from "react";
 import Link from 'next/link';
+import Image from 'next/image'
 
 const ProductOverview = (props) => {
 
@@ -32,31 +33,39 @@ const ProductOverview = (props) => {
       <div className="block lg:grid grid-cols-9 gap-x-10 xl:gap-x-14 pt-7 pb-10 lg:pb-14 2xl:pb-20 items-start">
         <div className="col-span-5 grid grid-cols-2 gap-2.5">
           <div className="col-span-1 transition duration-150 ease-in hover:opacity-90">
-            <img
+            <Image
               src="https://dev-ui-image-assets.s3.ap-south-1.amazonaws.com/product-overview/p-20-1.png"
               alt="Maniac Red Boys--0"
               className="object-cover w-full"
+              width={100}
+              height={100}
             />
           </div>
           <div className="col-span-1 transition duration-150 ease-in hover:opacity-90">
-            <img
+            <Image
               src="https://dev-ui-image-assets.s3.ap-south-1.amazonaws.com/product-overview/p-20-2.png"
               alt="Maniac Red Boys--1"
               className="object-cover w-full"
+              width={100}
+              height={100}
             />
           </div>
           <div className="col-span-1 transition duration-150 ease-in hover:opacity-90">
-            <img
+            <Image
               src="https://dev-ui-image-assets.s3.ap-south-1.amazonaws.com/product-overview/p-20-3.png"
               alt="Maniac Red Boys--2"
               className="object-cover w-full"
+              width={100}
+              height={100}
             />
           </div>
           <div className="col-span-1 transition duration-150 ease-in hover:opacity-90">
-            <img
+            <Image
               src="https://dev-ui-image-assets.s3.ap-south-1.amazonaws.com/product-overview/p-20-4.png"
               alt="Maniac Red Boys--3"
               className="object-cover w-full"
+              width={100}
+              height={100}
             />
           </div>
         </div>
