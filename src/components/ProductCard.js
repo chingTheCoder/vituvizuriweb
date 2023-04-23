@@ -1,5 +1,6 @@
 import React from "react";
 import Link from 'next/link';
+import Image from 'next/image'
 
 const ProductCard = ({ id, model, price, condition }) => {
   return (
@@ -22,10 +23,12 @@ const ProductCard = ({ id, model, price, condition }) => {
           </svg>
         </button>
 
-        <img
+        <Image
           src="https://dev-ui-image-assets.s3.ap-south-1.amazonaws.com/products/iphone-13-mlpf3hn-a-apple-original-imag6vzz5qvejz8z.jpeg?q=70"
           alt=""
           className="py-4 h-64 w-full object-contain transition duration-500 group-hover:scale-105 sm:h-72"
+          height={72}
+          width={172}
         />
 
         <div className="relative border-t dark:bg-gray-700 border-gray-100 dark:border-gray-400 bg-white p-6">
