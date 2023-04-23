@@ -1,10 +1,10 @@
-import Image from 'next/image'
+//import Image from 'next/image'
 
 export default function Signin() {
     return (
         <section>
   <div class="grid grid-cols-1 lg:grid-cols-2">
-    <div
+    {/* <div
       class="flex items-center justify-center px-4 py-10 sm:px-6 sm:py-16 lg:px-8 lg:py-24">
       <div class="xl:mx-auto xl:w-full xl:max-w-sm 2xl:max-w-md">
         <h2
@@ -120,7 +120,8 @@ export default function Signin() {
         width={1740}
         height={1080}
       />
-    </div>
+    </div> */}
+    welcome to sign in
   </div>
 </section>
 
