@@ -1,22 +1,29 @@
 import Image from 'next/image'
 import { Inter } from 'next/font/google'
-import  prisma  from '../../databse/database'
 
 const inter = Inter({ subsets: ['latin'] })
+
+import  prisma  from '../../database/database'
+import  ProductCard  from '../components/ProductCard.js'
 
 function Home({ mobiles }) {
   // Render data...
   return (
-    <div>
-      <h1>Mobiles</h1>
-      <ul>
-        {mobiles.map(mobile => (
-          <li key={mobile.id}>
-            {mobile.model}
-          </li>
-        ))}
-      </ul>
-    </div>
+    <main className="flex min-h-screen flex-col">
+      <div className="flex flex-col items-center justify-center flex-1 px-20 text-center">
+      <div>
+          <h1>Mobiles</h1>
+          <ProductCard/>
+          <ul>
+            {mobiles.map(mobile => (
+              <li key={mobile.id}>
+                  <ProductCard id={mobile.id} model={mobile.model} price={mobile.price} condition={mobile.condition}/>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+    </main>
   )
 }
 
@@ -28,6 +35,7 @@ export async function getServerSideProps() {
       id : true,
       model : true,
       price : true,
+      condition : true,
       mobile_images : { select : { url : true}}
     },
     orderBy : {
@@ -41,4 +49,4 @@ export async function getServerSideProps() {
 }
 
 
-export default Home;
+export default Home
